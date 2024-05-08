@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: skyblue;
+            height: 250px;
+            width: 320px;
+            
+
+
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <table border="3" cellpadding="12" cellspacing="12" align="center">
+        <tr>
+            <th>Number 1</th>
+            <th>Number 2</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td id="n1">....</td>
+            <td id="n2">....</td>
+            <td id="r">....</td>
+        </tr>
+        <tr>
+            <td><button onclick="Input()">Input</button></td>
+            <td><button onclick="Sub()">SUB</button></td>
+            <td><button onclick="Mul()">Mul</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Add()">ADD</button></td>
+            <td><button onclick="Div()">DIV</button></td>
+            <td><button onclick="M()">Mod</button></td>
+        </tr>
+    </table>
+</div>
+    <script type="text/javascript">
+        function Input(){
+            var a;
+            var b;
+            a=parseInt( window.prompt("Enter your first Number"));
+            b=parseInt( window.prompt("Enter your second Number"));
+            document.getElementById("n1").innerHTML=a;
+            document.getElementById("n2").innerHTML=b;
+        }
+        function Add(){
+           a=parseInt(document.getElementById("n1").innerHTML)
+           b=parseInt(document.getElementById("n2").innerHTML)
+           k=a+b;
+           document.getElementById("r").innerHTML=k;
+        }
+        function Sub(){
+           p=parseInt(document.getElementById("n1").innerHTML)
+           q=parseInt(document.getElementById("n2").innerHTML)
+           k=p-q;
+           document.getElementById("r").innerHTML=k;
+        }
+        function Mul(){
+           a=parseInt(document.getElementById("n1").innerHTML)
+           b=parseInt(document.getElementById("n2").innerHTML)
+           k=a*b;
+           document.getElementById("r").innerHTML=k;
+        }
+        function Div(){
+           a=parseInt(document.getElementById("n1").innerHTML)
+           b=parseInt(document.getElementById("n2").innerHTML)
+           k=a/b;
+           document.getElementById("r").innerHTML=k;
+        }
+        function M(){
+           a=parseInt(document.getElementById("n1").innerHTML)
+           b=parseInt(document.getElementById("n2").innerHTML)
+           k=a%b;
+           document.getElementById("r").innerHTML=k;
+        }
+    </script>
+</body>
+</html>
